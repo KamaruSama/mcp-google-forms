@@ -1,0 +1,17 @@
+startCommand:
+  type: stdio
+  commandFunction: |-
+    (config) => ({
+      command: "mcp-google-forms",
+      env: {
+        GOOGLE_FORMS_MCP_DIR: config.credentialsDir || "~/.config/google-forms-mcp"
+      }
+    })
+  configSchema:
+    type: object
+    properties:
+      credentialsDir:
+        type: string
+        title: Credentials directory
+        description: Where to read/write OAuth credentials.json and token.json.
+        default: ~/.config/google-forms-mcp
