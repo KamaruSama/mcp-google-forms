@@ -552,5 +552,10 @@ def raw_batch_update(
 #  Entrypoint
 # ─────────────────────────────────────────────────────────────────────────────
 
-if __name__ == "__main__":
+def main():
+    """Entry point for  console script."""
     mcp.run()
+
+
+if __name__ == "__main__":
+    main()

@@ -1,7 +1,11 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
 [project]
 name = "mcp-google-forms"
 version = "1.0.0"
-description = "MCP server for managing Google Forms — quizzes, grading, images, responses."
+description = "MCP server for managing Google Forms — quizzes, grading, images, responses. Part of likezara™ MCP suite."
 readme = "README.md"
 requires-python = ">=3.12"
 license = { text = "Proprietary — © 2026 likezara" }
@@ -12,16 +16,34 @@ maintainers = [
     { name = "likezara", email = "contact@likezara.com" },
 ]
 keywords = ["mcp", "google-forms", "quiz", "likezara"]
-
-[project.urls]
-Funding = "https://ko-fi.com/kamaru"
-"Commercial Inquiries" = "mailto:contact@likezara.com"
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Office/Business",
+    "Topic :: Software Development :: Libraries",
+]
 dependencies = [
     "google-api-python-client>=2.194.0",
     "google-auth-httplib2>=0.3.1",
     "google-auth-oauthlib>=1.3.1",
     "mcp>=1.27.0",
 ]
+
+[project.urls]
+Homepage = "https://github.com/KamaruSama/mcp-google-forms"
+Repository = "https://github.com/KamaruSama/mcp-google-forms"
+Issues = "https://github.com/KamaruSama/mcp-google-forms/issues"
+Funding = "https://ko-fi.com/kamaru"
+
+[project.scripts]
+mcp-google-forms = "mcp_google_forms:main"
+
+[tool.setuptools]
+py-modules = ["mcp_google_forms"]
 
 [dependency-groups]
 dev = [

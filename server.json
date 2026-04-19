@@ -1,0 +1,29 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.KamaruSama/mcp-google-forms",
+  "description": "19 tools for Google Forms: create quizzes, add questions, set answer keys, read responses.",
+  "repository": {
+    "url": "https://github.com/KamaruSama/mcp-google-forms",
+    "source": "github"
+  },
+  "version": "1.0.0",
+  "packages": [
+    {
+      "registryType": "pypi",
+      "identifier": "mcp-google-forms",
+      "version": "1.0.0",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "description": "Override the directory where OAuth credentials.json and token.json are stored (default: ~/.config/google-forms-mcp).",
+          "isRequired": false,
+          "format": "filepath",
+          "isSecret": false,
+          "name": "GOOGLE_FORMS_MCP_DIR"
+        }
+      ]
+    }
+  ]
+}
