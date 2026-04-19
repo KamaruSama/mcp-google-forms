@@ -1,5 +1,7 @@
 # mcp-google-forms
 
+<!-- mcp-name: io.github.KamaruSama/mcp-google-forms -->
+
 **MCP server for managing Google Forms — quizzes, grading, images, responses.**
 
 Exposes 19 tools for creating, editing, inspecting, and managing Google Forms through the Model Context Protocol. Built for use with Claude Code, Claude Desktop, or any MCP-compatible client.
